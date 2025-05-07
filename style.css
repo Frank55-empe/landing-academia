@@ -37,6 +37,11 @@ body {
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #218838;
 }
 
 .benefits {
@@ -104,11 +109,36 @@ form button {
   color: #28a745;
   font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e6e6e6;
 }
 
 .mensagem {
   margin-top: 15px;
   font-weight: bold;
+}
+
+.whatsapp-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #25d366;
+}
+
+.whatsapp-button {
+  background-color: #fff;
+  color: #25d366;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #f1f1f1;
 }
 
 footer {
