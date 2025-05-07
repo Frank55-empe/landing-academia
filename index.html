@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Academia Vida Ativa</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="hero">
     <div class="overlay">
       <h1>Transforme sua vida com saúde e movimento</h1>
       <p>Treinos personalizados, ambiente motivador e resultados reais.</p>
-      <a href="#formulario" class="btn">Comece Agora</a>
+      <a href="#planos" class="btn">Comece Agora</a>
     </div>
   </header>
 
@@ -41,87 +41,74 @@
     <h2>Depoimentos de Alunos</h2>
     <div class="testimonial">
       <p>"Em apenas 3 meses, perdi 10kg e ganhei autoestima. A equipe é incrível!"</p>
-      <p><strong>— Ana Silva</strong></p>
+      <span>— Ana Silva</span>
     </div>
     <div class="testimonial">
       <p>"Nunca me senti tão motivado a treinar. Ambiente top!"</p>
-      <p><strong>— Carlos Mendes</strong></p>
+      <span>— Carlos Mendes</span>
     </div>
   </section>
 
-  <section class="pricing">
+  <section class="plans" id="planos">
     <h2>Planos de Assinatura</h2>
     <div class="plan-cards">
-      <div class="plan">
+      <div class="plan-card">
         <h3>Mensal</h3>
-        <p>R$ 99,90/mês</p>
+        <p class="price">R$ 99,90/mês</p>
         <ul>
           <li>Acesso ilimitado</li>
           <li>Treinos personalizados</li>
           <li>Suporte de treinadores</li>
         </ul>
-        <a href="#formulario" class="btn">Assinar</a>
+        <a href="https://pag.ae/7XxYzZ1" target="_blank" class="btn">Assinar</a>
       </div>
-      <div class="plan destaque">
+      <div class="plan-card">
         <h3>Trimestral</h3>
-        <p>R$ 269,90</p>
+        <p class="price">R$ 269,90</p>
         <ul>
           <li>Economize 10%</li>
           <li>Acesso ilimitado</li>
           <li>Suporte completo</li>
         </ul>
-        <a href="#formulario" class="btn">Assinar</a>
+        <a href="https://pag.ae/7XxYzZ2" target="_blank" class="btn">Assinar</a>
       </div>
-      <div class="plan">
+      <div class="plan-card">
         <h3>Anual</h3>
-        <p>R$ 999,90</p>
+        <p class="price">R$ 999,90</p>
         <ul>
           <li>Economize 20%</li>
           <li>Consultoria nutricional</li>
           <li>Brinde exclusivo</li>
         </ul>
-        <a href="#formulario" class="btn">Assinar</a>
+        <a href="https://pag.ae/7XxYzZ3" target="_blank" class="btn">Assinar</a>
       </div>
     </div>
   </section>
 
   <section class="faq">
     <h2>Dúvidas Frequentes</h2>
-    <div class="accordion">
-      <div class="item">
-        <button class="question">Quais os horários de funcionamento?</button>
-        <div class="answer">
-          <p>Funcionamos de segunda a sexta das 6h às 22h e sábados das 8h às 14h.</p>
-        </div>
-      </div>
-      <div class="item">
-        <button class="question">Posso fazer uma aula experimental?</button>
-        <div class="answer">
-          <p>Sim! Agende sua aula gratuita pelo formulário abaixo.</p>
-        </div>
-      </div>
+    <div class="faq-item">
+      <h3>Quais os horários de funcionamento?</h3>
+      <p>Funcionamos de segunda a sexta das 6h às 22h e sábados das 8h às 14h.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Posso fazer uma aula experimental?</h3>
+      <p>Sim! Agende sua aula gratuita pelo formulário abaixo.</p>
     </div>
   </section>
 
-  <section class="form-section" id="formulario">
+  <section class="contact" id="formulario">
     <h2>Inscreva-se Agora</h2>
-    <form id="cadastroForm">
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <input type="email" name="email" placeholder="Seu e-mail" required />
-      <input type="tel" name="telefone" placeholder="Seu telefone" required />
-      <button type="submit">Enviar</button>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" placeholder="Mensagem" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
     </form>
-    <a href="https://wa.me/5599999999999" target="_blank" class="btn whatsapp-btn">Fale no WhatsApp</a>
-    <div class="mensagem" id="mensagem"></div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Academia Vida Ativa. Todos os direitos reservados.</p>
-    <div class="social">
-      <a href="#"><i>📘</i></a>
-      <a href="#"><i>📸</i></a>
-      <a href="#"><i>🐦</i></a>
-    </div>
+    <p>© 2025 Academia Vida Ativa. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
