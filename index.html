@@ -3,56 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vida Ativa e Saudável | Academia</title>
+  <title>Academia Vida Ativa</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header class="hero">
-    <div class="hero-content">
-      <h1>Transforme sua vida com saúde e movimento</h1>
-      <p>Junte-se à nossa comunidade fitness e alcance o seu melhor!</p>
-      <a href="#formulario" class="btn">Comece Agora</a>
+    <div class="overlay">
+      <h1>Corpo Saudável, Mente Forte</h1>
+      <p>Treine com os melhores profissionais e alcance seus objetivos!</p>
+      <a href="#planos" class="btn">Conheça nossos planos</a>
     </div>
   </header>
 
   <section class="benefits">
-    <h2>Por que escolher nossa academia?</h2>
+    <h2>Benefícios para você</h2>
     <div class="cards">
-      <div class="card">
-        <h3>Treinos Personalizados</h3>
-        <p>Programas exclusivos para o seu objetivo.</p>
+      <div class="card"><i class="fas fa-dumbbell"></i><h3>Musculação</h3><p>Equipamentos modernos e instrutores dedicados.</p></div>
+      <div class="card"><i class="fas fa-running"></i><h3>Aulas Dinâmicas</h3><p>Zumba, HIIT, Yoga e mais para todos os gostos.</p></div>
+      <div class="card"><i class="fas fa-apple-alt"></i><h3>Nutrição</h3><p>Suporte de nutricionistas para seu plano alimentar.</p></div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Histórias de Sucesso</h2>
+    <div class="testimonial">
+      <p>"Perdi 10kg em 3 meses com o plano da Vida Ativa. Os treinos são incríveis!"</p>
+      <strong>— Fernanda, 32 anos</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Ganhei massa muscular e melhorei minha saúde com a equipe da academia."</p>
+      <strong>— Lucas, 27 anos</strong>
+    </div>
+  </section>
+
+  <section class="pricing" id="planos">
+    <h2>Planos</h2>
+    <div class="plan-cards">
+      <div class="plan">
+        <h3>Mensal</h3>
+        <p><strong>R$99</strong>/mês</p>
+        <ul><li>Musculação</li><li>Aulas Coletivas</li></ul>
+        <a href="#formulario" class="btn">Quero esse!</a>
       </div>
-      <div class="card">
-        <h3>Nutrição Integrada</h3>
-        <p>Orientação alimentar com foco em resultados.</p>
+      <div class="plan destaque">
+        <h3>Trimestral</h3>
+        <p><strong>R$259</strong>/3 meses</p>
+        <ul><li>Todos os recursos</li><li>Consultoria grátis</li></ul>
+        <a href="#formulario" class="btn">Melhor custo-benefício!</a>
       </div>
-      <div class="card">
-        <h3>Ambiente Motivador</h3>
-        <p>Espaço moderno e equipe inspiradora.</p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>Dúvidas Frequentes</h2>
+    <div class="accordion">
+      <div class="item">
+        <button class="question">Qual horário de funcionamento?</button>
+        <div class="answer">Estamos abertos das 6h às 23h de segunda a sábado.</div>
+      </div>
+      <div class="item">
+        <button class="question">Posso fazer uma aula experimental?</button>
+        <div class="answer">Sim! Basta preencher o formulário e agendar sua aula grátis.</div>
       </div>
     </div>
   </section>
 
   <section class="form-section" id="formulario">
-    <h2>Cadastre-se e agende uma aula grátis!</h2>
+    <h2>Agende sua aula grátis</h2>
     <form id="leadForm">
       <input type="text" name="nome" placeholder="Seu nome" required />
       <input type="email" name="email" placeholder="Seu e-mail" required />
       <input type="tel" name="telefone" placeholder="Seu telefone" required />
-      <button type="submit" class="btn">Quero uma aula grátis</button>
+      <button type="submit" class="btn">Quero agendar!</button>
     </form>
+    <a id="whatsappLink" class="btn whatsapp-btn" href="#" target="_blank">
+      <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+    </a>
     <p id="mensagem" class="mensagem"></p>
   </section>
 
-  <section class="whatsapp-section">
-    <a href="https://wa.me/SEU_NUMERO" target="_blank" class="whatsapp-button">Fale conosco via WhatsApp</a>
-  </section>
-
   <footer>
-    <p>&copy; 2025 Vida Ativa e Saudável. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Academia Vida Ativa | Desenvolvido por você 💪</p>
+    <div class="social">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
